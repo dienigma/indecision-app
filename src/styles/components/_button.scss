@@ -1,0 +1,41 @@
+// Big Button
+.big-button {
+  outline: none;
+  background: $orange;
+  border: none;
+  border-bottom: 0.6rem solid darken($orange, 10%);
+  color: white;
+  font-weight: bold;
+  font-size: $m-size;
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+  width: 100%;
+  border-radius: 1rem;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+// Button
+.button {
+  outline: none;
+  background-color: $orange;
+  border: none;
+  border-bottom: 0.3rem solid darken($orange, 10%);
+  color: white;
+  font-weight: 500;
+  padding: $xs-size;
+  border-radius: 1rem;
+
+  &--link {
+    background: none;
+    border: none;
+    color: $off-white;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $s-size;
+  }
+}
